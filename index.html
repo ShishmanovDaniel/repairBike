@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ========== Page settings, fonts and stylesheet ========== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Loose Spoke Bike Repair | Tune-ups, flat fixes and repairs</title>
+<meta name="description" content="Neighborhood bike repair shop. Tune-ups, flat fixes, brake and gear work. Most repairs done in 3 days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== Header and navigation (same on every page) ========== -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="Loose Spoke Bike Repair home">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="#1C2B36" stroke-width="3"/>
+        <circle cx="20" cy="20" r="3" fill="#D2452B"/>
+        <g stroke="#1C2B36" stroke-width="1.5">
+          <line x1="20" y1="3" x2="20" y2="37"/>
+          <line x1="3" y1="20" x2="37" y2="20"/>
+          <line x1="8" y1="8" x2="32" y2="32"/>
+        </g>
+        <line x1="32" y1="8" x2="24" y2="16" stroke="#D2452B" stroke-width="2"/>
+      </svg>
+      Loose Spoke
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services &amp; prices</a></li>
+          <li><a href="#about">About us</a></li>
+      </ul>
+      <a class="btn btn-primary" href="#book">Book a repair</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ==================== PAGE: Home ==================== -->
+  <div class="page" id="page-home" data-title="Loose Spoke Bike Repair | Tune-ups, flat fixes and repairs">
+  <!-- ========== Hero: headline and popular prices ========== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-title">Your bike, fixed this week.</h1>
+        <p class="lead">Neighborhood repair shop for road, commuter, kids' and e-bikes. Most repairs are done in three days, and we call with a price before we touch anything.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#book">Book a repair</a>
+          <a class="btn" href="#services">See all prices</a>
+        </div>
+        <p class="note">Flat tire? Walk in. Tube swaps usually take 20 minutes.</p>
+      </div>
+
+      <!-- Price board -->
+      <div class="board" aria-labelledby="board-title">
+        <h2 id="board-title">Popular repairs</h2>
+        <p class="board-sub">Labor only. Parts are quoted before we start.</p>
+        <ul>
+          <li><span class="svc">Flat fix<small>Tube swap, tire check</small></span><span class="leader"></span><span class="price">$15</span></li>
+          <li><span class="svc">Basic tune-up<small>Brakes, gears, bolts, tire pressure</small></span><span class="leader"></span><span class="price">$65</span></li>
+          <li><span class="svc">Full overhaul<small>Strip, clean, regrease, rebuild</small></span><span class="leader"></span><span class="price">$180</span></li>
+          <li><span class="svc">E-bike check<small>Motor, battery and wiring inspection</small></span><span class="leader"></span><span class="price">$45</span></li>
+        </ul>
+        <a class="board-link" href="#services">Full price list</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== How drop-off works: 3 steps ========== -->
+  <section class="steps" aria-labelledby="steps-title">
+    <div class="wrap">
+      <h2 class="section-title" id="steps-title">How drop-off works</h2>
+      <p class="section-intro">No surprise bills. You approve the price before any work begins.</p>
+      <ol>
+        <li>
+          <h3>Drop it off</h3>
+          <p>Book a slot online or just bring it in. We tag your bike and write down what you've noticed.</p>
+        </li>
+        <li>
+          <h3>We text a quote</h3>
+          <p>A mechanic inspects it the same day and texts you a price for labor and parts. You say yes or no.</p>
+        </li>
+        <li>
+          <h3>Ride it home</h3>
+          <p>We text when it's ready, usually within three days. Every repair comes with a free 30-day adjustment.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== What we work on ========== -->
+  <section class="bikes" aria-labelledby="bikes-title">
+    <div class="wrap">
+      <h2 class="section-title" id="bikes-title">Bikes we work on</h2>
+      <p class="section-intro">If it has two wheels and pedals, we can probably fix it.</p>
+      <div class="bike-grid">
+        <div class="bike-type">
+          <h3>Road and gravel</h3>
+          <p>Drivetrain tuning, hydraulic brakes, tubeless setups and bar tape.</p>
+        </div>
+        <div class="bike-type">
+          <h3>Commuter and hybrid</h3>
+          <p>Racks, fenders, lights and the everyday wear from riding to work.</p>
+        </div>
+        <div class="bike-type">
+          <h3>Kids' bikes</h3>
+          <p>Training wheels on or off, seat height, and brakes small hands can pull.</p>
+        </div>
+        <div class="bike-type">
+          <h3>E-bikes</h3>
+          <p>Hub and mid-drive motors, battery health checks and wiring repairs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Customer reviews ========== -->
+  <section class="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 class="section-title" id="reviews-title">What riders say</h2>
+      <div class="review-grid">
+        <figure>
+          <blockquote>"They texted me a quote before doing anything, and it came in under what the big chain store charged. Bike shifts like new."</blockquote>
+          <figcaption>Dana R., commuter</figcaption>
+        </figure>
+        <figure>
+          <blockquote>"Dropped off my daughter's bike on Tuesday, picked it up Wednesday. They even lowered the seat for her."</blockquote>
+          <figcaption>Marcus T., parent</figcaption>
+        </figure>
+        <figure>
+          <blockquote>"Only shop nearby that would touch my e-bike. Found a loose motor connector in ten minutes."</blockquote>
+          <figcaption>Priya S., e-bike rider</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Call to action ========== -->
+  <section class="cta-band" aria-labelledby="home-cta-title">
+    <div class="wrap">
+      <h2 id="home-cta-title">Ready to get riding again?</h2>
+      <a class="btn btn-primary" href="#book">Book a repair</a>
+    </div>
+  </section>
+  </div>
+
+  <!-- ==================== PAGE: Services ==================== -->
+  <div class="page" id="page-services" data-title="Services and prices | Loose Spoke Bike Repair">
+  <!-- ========== Page header ========== -->
+  <section class="page-header">
+    <div class="wrap">
+      <h1>Services &amp; prices</h1>
+      <p class="lead">Every price is for labor. We quote parts before we start, and you can say no to anything.</p>
+    </div>
+  </section>
+
+  <!-- ========== Tune-up packages (comparison) ========== -->
+  <section aria-labelledby="tuneups-title">
+    <div class="wrap">
+      <h2 class="section-title" id="tuneups-title">Tune-up packages</h2>
+      <p class="section-intro">Not sure which one? Most bikes ridden a few times a week need a basic tune-up once a year.</p>
+      <div class="table-scroll">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th scope="col">What's included</th>
+              <th scope="col">Basic<span>$65</span></th>
+              <th scope="col">Standard<span>$110</span></th>
+              <th scope="col">Full overhaul<span>$180</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Safety check and tire pressure</th><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">Brake adjustment</th><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">Gear adjustment</th><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">Wheel truing</th><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">Drivetrain deep clean</th><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">Bearings regreased</th><td>No</td><td>No</td><td>Yes</td></tr>
+            <tr><th scope="row">Full strip and rebuild</th><td>No</td><td>No</td><td>Yes</td></tr>
+            <tr class="book-row">
+              <th scope="row"></th>
+              <td><a class="text-link" href="#book?service=basic-tune-up">Book basic</a></td>
+              <td><a class="text-link" href="#book?service=standard-tune-up">Book standard</a></td>
+              <td><a class="text-link" href="#book?service=full-overhaul">Book overhaul</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Single repairs price list ========== -->
+  <section class="price-lists" aria-labelledby="repairs-title">
+    <div class="wrap">
+      <h2 class="section-title" id="repairs-title">Single repairs</h2>
+      <p class="section-intro">For when one thing is wrong and the rest of the bike is fine.</p>
+
+      <div class="list-grid">
+        <div>
+          <h3>Tires and wheels</h3>
+          <table class="price-table">
+          <tr>
+            <th scope="row">Flat fix<small>Tube swap and tire check</small></th>
+            <td class="price">$15</td>
+            <td><a class="text-link" href="#book?service=flat-fix">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Tubeless setup<small>Per wheel, sealant included</small></th>
+            <td class="price">$30</td>
+            <td><a class="text-link" href="#book?service=tubeless-setup">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Wheel true<small>Straighten a wobbly wheel</small></th>
+            <td class="price">$25</td>
+            <td><a class="text-link" href="#book?service=wheel-true">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Spoke replacement<small>Per spoke, plus true</small></th>
+            <td class="price">$20</td>
+            <td><a class="text-link" href="#book?service=spoke-replacement">Book</a></td>
+          </tr>
+          </table>
+        </div>
+        <div>
+          <h3>Brakes</h3>
+          <table class="price-table">
+          <tr>
+            <th scope="row">Brake adjustment<small>Rim or mechanical disc</small></th>
+            <td class="price">$15</td>
+            <td><a class="text-link" href="#book?service=brake-adjustment">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Brake bleed<small>Hydraulic, per wheel</small></th>
+            <td class="price">$30</td>
+            <td><a class="text-link" href="#book?service=brake-bleed">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Pad replacement<small>Per wheel</small></th>
+            <td class="price">$12</td>
+            <td><a class="text-link" href="#book?service=pad-replacement">Book</a></td>
+          </tr>
+          </table>
+        </div>
+        <div>
+          <h3>Gears and chain</h3>
+          <table class="price-table">
+          <tr>
+            <th scope="row">Gear adjustment<small>Front and rear</small></th>
+            <td class="price">$20</td>
+            <td><a class="text-link" href="#book?service=gear-adjustment">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Chain replacement<small>Includes sizing</small></th>
+            <td class="price">$15</td>
+            <td><a class="text-link" href="#book?service=chain-replacement">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Cable and housing<small>Per cable</small></th>
+            <td class="price">$20</td>
+            <td><a class="text-link" href="#book?service=cable-replacement">Book</a></td>
+          </tr>
+          </table>
+        </div>
+        <div>
+          <h3>E-bikes</h3>
+          <table class="price-table">
+          <tr>
+            <th scope="row">E-bike check<small>Motor, battery and wiring</small></th>
+            <td class="price">$45</td>
+            <td><a class="text-link" href="#book?service=e-bike-check">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Battery health test<small>Capacity report included</small></th>
+            <td class="price">$25</td>
+            <td><a class="text-link" href="#book?service=battery-test">Book</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Wiring repair<small>Per hour</small></th>
+            <td class="price">$70</td>
+            <td><a class="text-link" href="#book?service=wiring-repair">Book</a></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Frequently asked questions ========== -->
+  <section class="faq" aria-labelledby="faq-title">
+    <div class="wrap narrow">
+      <h2 class="section-title" id="faq-title">Questions</h2>
+      <details>
+        <summary>How long will my repair take?</summary>
+        <p>Most repairs are done within three days. Flat fixes are usually done while you wait. If we need to order parts, we'll tell you the date when we send your quote.</p>
+      </details>
+      <details>
+        <summary>Can I bring my own parts?</summary>
+        <p>Yes. Labor prices stay the same. We just can't guarantee parts we didn't supply.</p>
+      </details>
+      <details>
+        <summary>What if I don't approve the quote?</summary>
+        <p>Pick up your bike at no charge. The inspection is always free.</p>
+      </details>
+      <details>
+        <summary>Do you store bikes?</summary>
+        <p>We hold finished bikes for 14 days. After that there's a $5 a day storage fee.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ========== Call to action ========== -->
+  <section class="cta-band" aria-labelledby="services-cta-title">
+    <div class="wrap">
+      <h2 id="services-cta-title">Found what you need?</h2>
+      <a class="btn btn-primary" href="#book">Book a repair</a>
+    </div>
+  </section>
+  </div>
+
+  <!-- ==================== PAGE: About ==================== -->
+  <div class="page" id="page-about" data-title="About us | Loose Spoke Bike Repair">
+  <!-- ========== Page header ========== -->
+  <section class="page-header">
+    <div class="wrap">
+      <h1>About us</h1>
+      <p class="lead">Three mechanics, one garage door, and a rule that nobody gets a surprise bill.</p>
+    </div>
+  </section>
+
+  <!-- ========== Our story ========== -->
+  <section aria-labelledby="story-title">
+    <div class="wrap story">
+      <div>
+        <h2 class="section-title" id="story-title">How we started</h2>
+        <p>Loose Spoke started in a one-car garage in 2016, fixing bikes for neighbors on weekends. People kept coming back because we explained what was wrong and only fixed what needed fixing.</p>
+        <p>Today we're on Mill Street with three repair stands, but the rule hasn't changed: we inspect first, text you a price, and don't start until you say yes.</p>
+      </div>
+      <ul class="promises">
+        <li><strong>Free inspection</strong> on every bike, even if you don't go ahead.</li>
+        <li><strong>Price before work.</strong> The quote you approve is the price you pay.</li>
+        <li><strong>30-day adjustment.</strong> If something shifts after a repair, we fix it free.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== Team ========== -->
+  <section class="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <h2 class="section-title" id="team-title">The mechanics</h2>
+      <div class="team-grid">
+        <div class="person">
+          <div class="avatar" style="--avatar:#D2452B" aria-hidden="true">RO</div>
+          <h3>Rosa Ortega</h3>
+          <p class="role">Owner and head mechanic</p>
+          <p>Rosa has built wheels for twelve years and still trues every one by hand.</p>
+        </div>
+        <div class="person">
+          <div class="avatar" style="--avatar:#1C2B36" aria-hidden="true">DK</div>
+          <h3>Devon Kim</h3>
+          <p class="role">E-bike specialist</p>
+          <p>Devon handles motors, batteries and wiring, and explains all of it in plain English.</p>
+        </div>
+        <div class="person">
+          <div class="avatar" style="--avatar:#5B7384" aria-hidden="true">AJ</div>
+          <h3>Andre James</h3>
+          <p class="role">Mechanic</p>
+          <p>Andre does most of our tune-ups and every kids' bike that comes through the door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Visit the shop ========== -->
+  <section class="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div>
+        <h2 class="section-title" id="visit-title">Visit the shop</h2>
+        <address>
+          214 Mill Street<br>
+          Riverside, USA 00000
+        </address>
+        <p>Street parking out front and a bike rack by the door. Call <a href="tel:+15555550142">(555) 555-0142</a> or email <a href="mailto:hello@loosespoke.example">hello@loosespoke.example</a>.</p>
+      </div>
+      <table class="hours">
+        <caption class="sr-only">Opening hours</caption>
+        <tbody>
+          <tr data-day="1"><th scope="row">Monday</th><td>Closed</td></tr>
+          <tr data-day="2 3 4 5"><th scope="row">Tuesday to Friday</th><td>10am to 7pm</td></tr>
+          <tr data-day="6"><th scope="row">Saturday</th><td>9am to 5pm</td></tr>
+          <tr data-day="0"><th scope="row">Sunday</th><td>11am to 4pm</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  </div>
+
+  <!-- ==================== PAGE: Book ==================== -->
+  <div class="page" id="page-book" data-title="Book a repair | Loose Spoke Bike Repair">
+  <!-- ========== Page header ========== -->
+  <section class="page-header">
+    <div class="wrap">
+      <h1>Book a repair</h1>
+      <p class="lead">Pick a drop-off day and tell us what's wrong. We'll confirm by text within a few hours.</p>
+    </div>
+  </section>
+
+  <!-- ========== Booking form and what to expect ========== -->
+  <section class="book" aria-label="Booking form">
+    <div class="wrap">
+      <form id="booking-form" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" autocomplete="name" required>
+          <span class="error" id="name-error"></span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          <span class="error" id="phone-error"></span>
+        </div>
+        <div class="field">
+          <label for="bike">Type of bike</label>
+          <select id="bike" name="bike" required>
+            <option value="">Choose a type</option>
+            <option>Road or gravel</option>
+            <option>Commuter or hybrid</option>
+            <option>Mountain</option>
+            <option>Kids' bike</option>
+            <option>E-bike</option>
+          </select>
+          <span class="error" id="bike-error"></span>
+        </div>
+        <div class="field">
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="flat-fix">Flat fix ($15)</option>
+            <option value="basic-tune-up">Basic tune-up ($65)</option>
+            <option value="standard-tune-up">Standard tune-up ($110)</option>
+            <option value="full-overhaul">Full overhaul ($180)</option>
+            <option value="tubeless-setup">Tubeless setup ($30)</option>
+            <option value="wheel-true">Wheel true ($25)</option>
+            <option value="spoke-replacement">Spoke replacement ($20)</option>
+            <option value="brake-adjustment">Brake adjustment ($15)</option>
+            <option value="brake-bleed">Brake bleed ($30)</option>
+            <option value="pad-replacement">Pad replacement ($12)</option>
+            <option value="gear-adjustment">Gear adjustment ($20)</option>
+            <option value="chain-replacement">Chain replacement ($15)</option>
+            <option value="cable-replacement">Cable and housing ($20)</option>
+            <option value="e-bike-check">E-bike check ($45)</option>
+            <option value="battery-test">Battery health test ($25)</option>
+            <option value="wiring-repair">Wiring repair ($70 per hour)</option>
+            <option value="not-sure">Not sure, please inspect it (free)</option>
+          </select>
+          <span class="error" id="service-error"></span>
+        </div>
+        <div class="field">
+          <label for="date">Drop-off day</label>
+          <input id="date" name="date" type="date" required>
+          <span class="error" id="date-error"></span>
+        </div>
+        <div class="field">
+          <label for="time">Drop-off time</label>
+          <select id="time" name="time" required>
+            <option value="">Choose a time</option>
+            <option>Morning</option>
+            <option>Midday</option>
+            <option>Afternoon</option>
+          </select>
+          <span class="error" id="time-error"></span>
+        </div>
+        <div class="field full">
+          <label for="notes">What's going on with the bike? (optional)</label>
+          <textarea id="notes" name="notes" maxlength="400" placeholder="For example: back brake squeaks and gears skip on hills"></textarea>
+          <span class="counter" id="notes-counter">0 / 400</span>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Book a repair</button>
+        </div>
+      </form>
+
+      <aside class="expect" aria-labelledby="expect-title">
+        <h2 id="expect-title">What happens next</h2>
+        <ol>
+          <li>We text to confirm your drop-off slot.</li>
+          <li>You bring the bike in. Inspection is free.</li>
+          <li>We text a quote. Nothing starts until you reply yes.</li>
+          <li>We text again when it's ready to ride.</li>
+        </ol>
+        <p class="estimate" id="estimate" hidden>Estimated labor: <strong id="estimate-price"></strong></p>
+      </aside>
+    </div>
+  </section>
+  </div>
+</main>
+
+<!-- ========== Footer (same on every page) ========== -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">Loose Spoke Bike Repair</p>
+      <p>214 Mill Street, Riverside, USA 00000<br>
+      <a href="tel:+15555550142">(555) 555-0142</a> &middot; <a href="mailto:hello@loosespoke.example">hello@loosespoke.example</a></p>
+    </div>
+    <div>
+      <p class="footer-heading">Pages</p>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services &amp; prices</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#book">Book a repair</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Hours</p>
+      <p>Tue to Fri: 10am to 7pm<br>Sat: 9am to 5pm<br>Sun: 11am to 4pm<br>Mon: closed</p>
+    </div>
+  </div>
+  <div class="wrap footer-note">Concept website. Business details are placeholders.</div>
+</footer>
+
+<!-- ========== JavaScript ========== -->
+<script src="script.js"></script>
+</body>
+</html>
